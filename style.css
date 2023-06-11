@@ -1,0 +1,137 @@
+:root {
+  --ijo1: #2b7a78;
+  --ijo2: #3aafa9;
+  --light: #def2f1;
+  --dark: #17252a;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.judul p {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: var(--dark);
+}
+
+.fa-list-check {
+  position: relative;
+  top: 0.1em;
+}
+
+.tambah_data .card {
+  background-color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  border-radius: 1em;
+}
+
+.form-control {
+  border-color: transparent;
+  background: transparent;
+  background-color: transparent;
+}
+
+.tambah_data .form-control {
+  border-color: transparent;
+  background: transparent;
+  background-color: transparent;
+}
+
+.tambah_data .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.edit_data .card {
+  background-color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  border-radius: 1em;
+}
+
+.edit_data .form-control {
+  background: transparent;
+}
+
+.edit_data .form-control:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.edit_data .card-header {
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.edit_data label {
+  font-weight: bolder;
+}
+
+.tambah_data #nama_tugas {
+  margin-top: 1.5em;
+}
+
+.tambah_data input:focus ~ label,
+.tambah_data input:valid ~ label {
+  transform: translateY(-15px);
+}
+
+.tambah_data form label {
+  color: #999;
+  position: absolute;
+  left: 28px;
+  cursor: text;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tambah_data .edit {
+  cursor: pointer;
+  color: var(--light);
+  background-color: var(--ijo1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.tambah_data .edit:active {
+  transform: translateY(4px);
+  background-color: var(--ijo1);
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.table .card {
+  background-color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  border-radius: 1em;
+}
+
+.table .btn {
+  border-radius: 15px;
+  border-color: transparent;
+}
+
+.table .edit {
+  background-color: var(--ijo1);
+}
+.table .edit:hover {
+  background-color: #236462;
+  border-color: transparent;
+}
+
+.table .delete {
+  background-color: rgb(139, 75, 75);
+}
+
+.edit_data .simpan {
+  background-color: var(--ijo1);
+  border-color: transparent;
+}
+.edit_data .simpan:hover {
+  background-color: #236462;
+  border-color: transparent;
+}
